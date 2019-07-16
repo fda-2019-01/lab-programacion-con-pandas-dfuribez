@@ -4,3 +4,7 @@
 ## 
 
 
+import pandas as pd
+
+df = pd.read_csv("tbl1.tsv", sep="\t")
+print(sorted([string.upper() for string in set(df["_c4"])]))
